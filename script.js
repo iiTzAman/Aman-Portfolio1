@@ -98,13 +98,13 @@ function loadingAnimation(){
 //     })
 // }
 
-// function animateSVG(){
-//     const pathAll = document.querySelectorAll("#uxSvg path")
+function animateSVG(){
+    const pathAll = document.querySelectorAll("#uxSvg path")
     
-//     pathAll.forEach((path)=>{
-//         console.log(path.getTotalLength())
-//     })
-// }
+    pathAll.forEach((path)=>{
+        console.log(path.getTotalLength())
+    })
+}
 
 
 function animateHomePage() {
@@ -163,7 +163,7 @@ function cardHoverEffect() {
 
         cnt.addEventListener("mouseleave", function(dets){
             showingImage.style.filter = "grayscale(0)"
-            document.querySelector("#home").style.backgroundColor = "#fcfaf8"
+            document.querySelector("#home").style.backgroundColor = "#fff"
         })
     })
 }
@@ -204,5 +204,6 @@ revealToSpan()
 valueSetters()
 loadingAnimation()
 // locoinitialize()
+animateSVG()
 cardHoverEffect()
 
